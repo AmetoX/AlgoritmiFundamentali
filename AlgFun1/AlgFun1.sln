@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgFun1", "AlgFun1.csproj", "{276F89BD-580A-40FB-9C52-F587204F8E91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgFun2", "..\AlgFun2\AlgFun2.csproj", "{CA80FE90-3C00-4B25-91AB-B23AA5FE3460}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgFun2", "..\AlgFun2\AlgFun2.csproj", "{CA80FE90-3C00-4B25-91AB-B23AA5FE3460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgFun3", "..\AlgFun3\AlgFun3.csproj", "{5F137F09-92ED-4D3A-93F0-B260E342EAD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CA80FE90-3C00-4B25-91AB-B23AA5FE3460}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA80FE90-3C00-4B25-91AB-B23AA5FE3460}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA80FE90-3C00-4B25-91AB-B23AA5FE3460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F137F09-92ED-4D3A-93F0-B260E342EAD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F137F09-92ED-4D3A-93F0-B260E342EAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F137F09-92ED-4D3A-93F0-B260E342EAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F137F09-92ED-4D3A-93F0-B260E342EAD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
