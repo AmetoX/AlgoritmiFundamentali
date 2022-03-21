@@ -1,7 +1,6 @@
 ﻿
 int n = int.Parse(Console.ReadLine());
 string[] data = Console.ReadLine().Split(' ');
-
 int[] v = new int[n];
 
 Console.Write("Numere palindrom din sirul introdus: ");
