@@ -23,35 +23,37 @@ namespace Matrici_Curs_
             List<string> data = new List<string>();
             //data.Add(load.ReadLine());
             string buffer;
-            while((buffer = load.ReadLine()) != null)
+            while ((buffer = load.ReadLine()) != null)
             {
                 data.Add(buffer);
             }
             load.Close();
+            //am citit datele si dupa am inchis fisierul
+            //toate datele sunt salvate in 'data' sub forma de stringuri
 
-            foreach(string line in data)
+            foreach (string line in data)
             {
                 listBox1.Items.Add(line);
             }
             int n = int.Parse(data[0].Split(' ')[0]);
             int m = int.Parse(data[1].Split(' ')[1]);
             int[,] matrix = new int[n, m];
-            for(int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
                 string[] t = data[i + 1].Split(' ');
-                for(int j = 0;j < m; j++)
+                for (int j = 0; j < m; j++)
                 {
-                    matrix[i,j] = int.Parse(t[j]);
+                    matrix[i, j] = int.Parse(t[j]);
                 }
             }
 
             string b;
-            for(int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
                 b = "";
-                for(int j = 0; j < m; j++)
+                for (int j = 0; j < m; j++)
                 {
-                    b += matrix[i, j]+" ";
+                    b += matrix[i, j] + " ";
                 }
                 listBox2.Items.Add(b);
             }

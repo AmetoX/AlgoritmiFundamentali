@@ -62,17 +62,73 @@ namespace SortingApp
                     }
                 }
             } while (!ok);
-            //-----
 
-            for(int i = 0; i < n; i++)
+            //Bublle sort v2--
+            /*//am tinut cont de maximul ajunge pe ultima pozitie la fiecare etapa
+            bool ok;
+            int aux;
+            int k = 0;
+            do
             {
-                toV += v[i]+" ";
-            }
-            listBox2.Items.Add(toV);
+                ok = true;
+                for (int i = 0; i < n - 1 - k; i++)
+                {
+                    if (v[i] > v[i + 1])
+                    {
+                        aux = v[i];
+                        v[i] = v[i + 1];
+                        v[i + 1] = aux;
+                        ok = false;
+                    }
+                }
+                k++;
+            }            
+            while (!ok);*/
 
             //--Selection Sort--
+            /*//selectez minimul/maxim si il pun pe prima pozitie
+            int aux;
+            for (int j = 0; j < n -1; j++)
+            {
+                int poz = j;
+                int min = v[j];
+                for (int i = 1 + j; i < n; i++)
+                {
+                    if (v[i] < min)
+                    {
+                        min = v[i];
+                        poz = i;
+                    }                   
+                }
+                aux = v[j];
+                v[j] = v[poz];
+                v[poz] = aux;
+            }*/
+
+            //For in For Sort--
+            /*int aux;
+            for (int i = 0; i < n - 1; i++)
+            {
+                for (int j = i + 1; j < n; j++)
+                {
+                    if (v[i] > v[j])
+                    {
+                        aux = v[i];
+                        v[i] = v[j];
+                        v[j] = aux;
+                    }
+                }
+            }
+            */
 
             //-----
+            //afisare vector sortat int-un singur string
+            for (int i = 0; i < n; i++)
+            {
+                toV += v[i] + " ";
+            }
+            listBox2.Items.Add(toV);
         }
     }
 }
+//form1Designer - de acolo stergi erorile cand stergi un listbox
