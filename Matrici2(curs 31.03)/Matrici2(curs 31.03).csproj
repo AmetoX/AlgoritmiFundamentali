@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AC6F841C-687F-4B81-96B1-E107E9D56917}</ProjectGuid>
+    <ProjectGuid>{06E4E2E3-9F1D-4CA3-A77C-E2554B93118D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Probleme_Pb.Info</RootNamespace>
-    <AssemblyName>Probleme_Pb.Info</AssemblyName>
+    <RootNamespace>Matrici2_curs_31._03_</RootNamespace>
+    <AssemblyName>Matrici2%28curs 31.03%29</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,7 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="p488.txt" />
+    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
