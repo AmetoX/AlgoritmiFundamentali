@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrici2(curs 31.03)", "..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrici3(Conturul. Curs)", "..\Matrici3(Conturul. Curs)\Matrici3(Conturul. Curs).csproj", "{2BCA2EA1-75E7-4765-87C6-9A8C22E3C9A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs(07_04)", "..\Curs(07_04)\Curs(07_04).csproj", "{D3D3F09F-320B-48EB-BBC6-BB17D488104A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{2BCA2EA1-75E7-4765-87C6-9A8C22E3C9A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BCA2EA1-75E7-4765-87C6-9A8C22E3C9A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BCA2EA1-75E7-4765-87C6-9A8C22E3C9A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3D3F09F-320B-48EB-BBC6-BB17D488104A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D3F09F-320B-48EB-BBC6-BB17D488104A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D3F09F-320B-48EB-BBC6-BB17D488104A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D3F09F-320B-48EB-BBC6-BB17D488104A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
