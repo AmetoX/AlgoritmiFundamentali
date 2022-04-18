@@ -86,7 +86,7 @@ namespace Matrici2_curs_31._03_
                     int nr = 0;
                     if (i - 1 >= 0 && j - 1 >= 0)
                     {
-                        s += t[i - 1, j - 1];
+                        s += t[i - 1, j - 1];   
                         nr++;
                     }
                     if (i - 1 >= 0)
