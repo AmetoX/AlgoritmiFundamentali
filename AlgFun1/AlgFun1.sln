@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs(07_04)", "..\Curs(07_0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs_14_04", "..\Curs_14_04\Curs_14_04.csproj", "{2CDDE4A5-9220-4F4A-AB66-9433F43333C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poligon_recurenta_05.05", "..\Poligon_recurenta_05.05\Poligon_recurenta_05.05.csproj", "{10004E5C-5E24-44A6-AB94-D896D4422977}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{2CDDE4A5-9220-4F4A-AB66-9433F43333C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CDDE4A5-9220-4F4A-AB66-9433F43333C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CDDE4A5-9220-4F4A-AB66-9433F43333C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10004E5C-5E24-44A6-AB94-D896D4422977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10004E5C-5E24-44A6-AB94-D896D4422977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10004E5C-5E24-44A6-AB94-D896D4422977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10004E5C-5E24-44A6-AB94-D896D4422977}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
