@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Probleme_Pb.Info
 {
@@ -10,7 +11,7 @@ namespace Probleme_Pb.Info
     {
         static void Main(string[] args)
         {
-            
+            p36();
         }
         static void p658()
         {
@@ -112,7 +113,7 @@ namespace Probleme_Pb.Info
                 if (b > a) b -= a;
             }
             return a;
-        }    
+        }
 
         static void p510()
         {
@@ -170,7 +171,7 @@ namespace Probleme_Pb.Info
             }
             return true;
         }
-        
+
         static void p511()
         {
             //cod tel 2
@@ -277,6 +278,79 @@ namespace Probleme_Pb.Info
                 case 4: Console.Write(Sv); break;
             }
             Console.ReadKey();
+        }
+
+        static int[,] tn;
+        static bool[,] b;
+        static int t, nr, nrmax;
+        static void p36()
+        {
+            //nu-i de pe pbinfo(de pe siteul lui laslo)
+            //parcurgere in adancime
+            tn = readM(@"../../p36_matrice.txt");
+            b = new bool[tn.GetLength(0), tn.GetLength(1)];
+            viewM(tn);
+            for (int i = 0; i < tn.GetLength(0); i++)
+            {
+                for (int j = 0; j < tn.GetLength(1); j++)
+                {
+                    nr = 0;
+                    t = tn[i, j];
+                    PA(i, j);
+                    if (nr > nrmax)
+                    {
+                        nrmax = nr;
+                    }
+                }
+            }
+            Console.WriteLine(nrmax +" ");
+        }
+        static void PA(int i, int j)
+        {
+            if(i>-0&&j>=0&&i<tn.GetLength(0)&&j<tn.GetLength(1)&&!b[i,j]&& tn[i, j] == t)
+            {
+                nr++;
+                b[i, j] = true;
+                PA(i-1, j);
+                PA(i, j - 1);
+                PA(i+1, j);
+                PA(i, j + 1);
+            }
+        }
+        static int[,] readM(string filename)
+        {
+            int[,] toR;
+            string buffer;
+            List<string> T = new List<string>();
+            TextReader load = new StreamReader(filename);
+            while((buffer=load.ReadLine()) != null)
+            {
+                T.Add(buffer);
+            }
+            load.Close();
+            int n = T.Count;
+            int m = T[0].Split(' ').Length;
+            toR = new int[n, m];
+            for(int i = 0; i < n; i++)
+            {
+                string[] ld = T[i].Split(' ');
+                for(int j = 0; j < m; j++)
+                {
+                    toR[i, j] = int.Parse(ld[j]);
+                }
+            }
+            return toR;
+        }
+        static void viewM(int[,] m)
+        {
+            for(int i = 0; i < m.GetLength(0); i++)
+            {
+                for(int j = 0; j < m.GetLength(1); j++)
+                {
+                    Console.Write(m[i,j]+" ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }

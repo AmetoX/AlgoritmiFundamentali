@@ -1,0 +1,12 @@
+﻿Se da un druk de val 0 si 1 de dim (n,m).
+Sa se afle daca exista drum de 0 de la o locatie (0,0)
+la (n-1,m-1).
+
+0011001
+0101010
+0101010
+0001000
+0001010
+0000010
+
+Sa se afiseze Da daca este drum.
