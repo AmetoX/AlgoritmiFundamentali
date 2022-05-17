@@ -282,7 +282,7 @@ namespace Probleme_Pb.Info
 
         static int[,] tn;
         static bool[,] b;
-        static int t, nr, nrmax;
+        static int t, nr, nrmax = 0;
         static void p36()
         {
             //nu-i de pe pbinfo(de pe siteul lui laslo)

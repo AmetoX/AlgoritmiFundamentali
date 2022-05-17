@@ -1,6 +1,9 @@
-﻿Se da un druk de val 0 si 1 de dim (n,m).
-Sa se afle daca exista drum de 0 de la o locatie (0,0)
-la (n-1,m-1).
+﻿Problema teritoriilor (valori 0 adiacente înconjurate de aceeaşi valoare) (jocul de Go)
+[Se dă o matrice de valori 0,1,2. Se defineşte teritoriul lui 1, un platou (definit ca în problema 36)
+de valoare 0, pentru care toţi vecinii sunt 1, analog, teritoriul lui 2 este un platou de valoare 
+0 pentru care toţi vecinii au valoarea 2. Pentru o matrice dată contorizaţi 
+elementele constitutive ale teritoriilor lui 1 şi 2.
+> (4,2)]
 
 0011001
 0101010
