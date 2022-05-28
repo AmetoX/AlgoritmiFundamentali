@@ -21,14 +21,13 @@
             //Lee();
 
             //BK test---------
-            int n = 4;
+            int n = 5;
             int[] s = new int[n];
             bool[] b = new bool[n];
             //BK1(0, n, s);
             //BK2(0, n, s);
             BK3(0, n, s, b);
             Console.WriteLine("Done");
-
         }
         public static void Lee()
         {
@@ -137,7 +136,6 @@
                 }
             }
         }
-
         public static void BK2(int k, int n, int[] s)
         {//permutarile unei multimi (n^n)
             if (k >= n)
@@ -172,7 +170,6 @@
                 }
             }
         }
-
         public static void BK3(int k, int n, int[] s, bool[] b)
         {//permutari (n!)
             if (k >= n)
