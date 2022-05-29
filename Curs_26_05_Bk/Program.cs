@@ -170,30 +170,30 @@
                 }
             }
         }
-        public static void BK3(int k, int n, int[] s, bool[] b)
-        {//permutari (n!)
-            if (k >= n)
+    public static void BK3(int k, int n, int[] s, bool[] b)
+    {//permutari (n!)
+        if (k >= n)
+        {
+            for (int i = 0; i < n; i++)
             {
-                for (int i = 0; i < n; i++)
-                {
-                    Console.Write(s[i] + " ");
-                }
-                Console.WriteLine();
+                Console.Write(s[i] + " ");
             }
-            else
+            Console.WriteLine();
+        }
+        else
+        {
+            for (int i = 0; i < n; i++)
             {
-                for (int i = 0; i < n; i++)
+                if (!b[i])
                 {
-                    if (!b[i])
-                    {
-                        b[i] = true;
-                        s[k] = i + 1;
-                        BK3(k + 1, n, s, b);
-                        b[i] = false;
-                    }
+                    b[i] = true;
+                    s[k] = i + 1;
+                    BK3(k + 1, n, s, b);
+                    b[i] = false;
                 }
             }
         }
+    }
         //urmeaza aranjamente si combinari
     }
 }
