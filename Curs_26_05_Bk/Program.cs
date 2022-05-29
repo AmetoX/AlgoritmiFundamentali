@@ -170,7 +170,7 @@
                 }
             }
         }
-    public static void BK3(int k, int n, int[] s, bool[] b)
+        public static void BK3(int k, int n, int[] s, bool[] b)
     {//permutari (n!)
         if (k >= n)
         {
