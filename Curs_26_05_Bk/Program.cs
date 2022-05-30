@@ -11,13 +11,13 @@
             //Algoritmul lui Lee--------
             //matrix = ReadMatrixFile();
             //ViewMatrix(matrix);
-            //Queue A = new Queue();
-            //A.Push(new TriData(1, 2, 1));
-            //A.Push(new TriData(3, 4, 5));
-            //A.Push(new TriData(1, 6, 2));
-            //A.Push(new TriData(0, 2, 4));
-            //A.Push(new TriData(7, 2, 3));
-            //Console.WriteLine(A.view());
+            Queue A = new Queue();
+            A.Push(new TriData(1, 2, 1));
+            A.Push(new TriData(3, 4, 5));
+            A.Push(new TriData(1, 6, 2));
+            A.Push(new TriData(0, 2, 4));
+            A.Push(new TriData(7, 2, 3));
+            Console.WriteLine(A.view());
             //Lee();
 
             //BK test---------
@@ -26,7 +26,7 @@
             bool[] b = new bool[n];
             //BK1(0, n, s);
             //BK2(0, n, s);
-            BK3(0, n, s, b);
+            //BK3(0, n, s, b);
             Console.WriteLine("Done");
         }
         public static void Lee()
@@ -35,7 +35,7 @@
             A.Push(new TriData(0, 0, 1));
             matrix[0, 0] = 1;
             while (!A.IsEmpty())
-            {//BFS
+            {//BFS  (Breadth First Search)
                 TriData t = A.Pop();
                 if (t.l - 1 >= 0) //vecin nord
                 {
