@@ -26,7 +26,7 @@
             bool[] b = new bool[n];
             //BK1(0, n, s);
             //BK2(0, n, s);
-            BK3(0, n, s, b);
+            BK1(0, n, s);
             Console.WriteLine("Done");
         }
         public static void Lee()
