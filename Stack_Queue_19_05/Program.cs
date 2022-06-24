@@ -57,6 +57,7 @@
             A1.Push(new triData(1, 2, 3));
             A1.Push(new triData(4, 5, 6));
             A1.Push(new triData(5, 5, 5));
+            A1.Pop();
             A1.view();
             Console.ReadKey();
         }

@@ -1,4 +1,5 @@
-﻿namespace Curs_26_05_Bk
+﻿using System.IO;
+namespace Curs_26_05_Bk
 {
     /// <summary>
     /// Algoritmul lui Lee
@@ -9,21 +10,32 @@
         static void Main(string[] args)
         {
             //Algoritmul lui Lee--------
-            //matrix = ReadMatrixFile();
+            TextReader load = new StreamReader(@"E:\Coding\Sem 2\AlgoritmiFundamentali\Curs_26_05_Bk\TextFile1.txt");
+            int n = int.Parse(load.ReadLine());
+            int m = int.Parse(load.ReadLine());
+            int[,] matrix = new int[n, m];
+            for (int i = 0; i < n; i++)
+            {
+                string[] buffer = load.ReadLine().Split(' ');
+                for (int j = 0; j < m; j++)
+                {
+                    matrix[i, j] = int.Parse(buffer[j]);
+                }
+            }
             //ViewMatrix(matrix);
-            Queue A = new Queue();
-            A.Push(new TriData(1, 2, 1));
-            A.Push(new TriData(3, 4, 5));
-            A.Push(new TriData(1, 6, 2));
-            A.Push(new TriData(0, 2, 4));
-            A.Push(new TriData(7, 2, 3));
-            Console.WriteLine(A.view());
+            //Queue A = new Queue();
+            //A.Push(new TriData(1, 2, 1));
+            //A.Push(new TriData(3, 4, 5));
+            //A.Push(new TriData(1, 6, 2));
+            //A.Push(new TriData(0, 2, 4));
+            //A.Push(new TriData(7, 2, 3));
+            //Console.WriteLine(A.view());
             //Lee();
 
             //BK test---------
-            int n = 5;
-            int[] s = new int[n];
-            bool[] b = new bool[n];
+            //int n = 5;
+            //int[] s = new int[n];
+            //bool[] b = new bool[n];
             //BK1(0, n, s);
             //BK2(0, n, s);
             //BK3(0, n, s, b);
@@ -75,10 +87,10 @@
         }
         private static int[,] ReadMatrixFile()
         {
-            TextReader load = new StreamReader(@"..\..\TextFile1.txt");
-            string[] t = load.ReadLine().Split(' ');
-            int n = int.Parse(t[0]);
-            int m = int.Parse(t[1]);
+            TextReader load = new StreamReader(@"E:\Coding\Sem 2\AlgoritmiFundamentali\Curs_26_05_Bk\TextFile1.txt");
+            //string[] t = load.ReadLine().Split(' ');
+            int n = int.Parse(load.ReadLine().Split(' ')[0]);
+            int m = int.Parse(load.ReadLine().Split(' ')[1]);
             int[,] a = new int[n, m];
             for (int i = 0; i < n; i++)
             {

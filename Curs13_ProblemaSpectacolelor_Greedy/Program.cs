@@ -16,7 +16,7 @@ problemei.*/
     {
         static List<spect> load()
         {
-            TextReader l = new StreamReader(@"..\..\TextFile1.txt");
+            TextReader l = new StreamReader(@"E:\Coding\Sem 2\AlgoritmiFundamentali\Curs13_ProblemaSpectacolelor_Greedy\TextFile1.txt");
             List<spect> toR = new List<spect>();
             string buffer;
             while ((buffer = l.ReadLine()) != null)

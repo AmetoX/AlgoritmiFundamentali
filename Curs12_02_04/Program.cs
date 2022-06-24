@@ -7,12 +7,13 @@
             int n = 7;
             //int[] s = new int[n];
             bool[] b = new bool[n];
+            int[] s = new int[n + 1];
             int p = 4;
             //BKAranj(0, n, p, s, b);
-            //BKComb(0, n, p, s, b);
-            int[] s = new int[n + 1];
+            BKComb(0, n, p, s, b);
+            
             s[0] = 0;
-            BKCombv2(1, n, p, s);
+            //BKCombv2(1, n, p, s);
         }
 
         private static void BKCombv2(int k, int n, int p, int[] s)
