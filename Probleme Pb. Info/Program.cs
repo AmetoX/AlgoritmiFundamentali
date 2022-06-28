@@ -307,7 +307,7 @@ namespace Probleme_Pb.Info
         }
         static void PA(int i, int j)
         {
-            if(i>-0&&j>=0&&i<tn.GetLength(0)&&j<tn.GetLength(1)&&!b[i,j]&& tn[i, j] == t)
+            if (i > -0 && j >= 0 && i < tn.GetLength(0) && j < tn.GetLength(1) && !b[i, j] && tn[i, j] == t) 
             {
                 nr++;
                 b[i, j] = true;
