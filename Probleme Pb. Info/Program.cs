@@ -11,7 +11,24 @@ namespace Probleme_Pb.Info
     {
         static void Main(string[] args)
         {
-            p36();
+            int n = int.Parse(Console.ReadLine());
+            int s = 1;
+            while (n != 0)
+            {
+                int aux = n % 10;
+                if (aux % 2 != 0)
+                {
+                    s *= aux;
+                }
+                n /= 10;
+            }
+            if (s == 0)
+            {
+                s = -1;
+                Console.WriteLine(s);
+            }else
+                Console.WriteLine(s);
+            //p36();
         }
         static void p658()
         {

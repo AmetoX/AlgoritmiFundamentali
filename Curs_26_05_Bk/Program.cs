@@ -13,7 +13,7 @@ namespace Curs_26_05_Bk
             TextReader load = new StreamReader(@"E:\Coding\Sem 2\AlgoritmiFundamentali\Curs_26_05_Bk\TextFile1.txt");
             int n = int.Parse(load.ReadLine());
             int m = int.Parse(load.ReadLine());
-            int[,] matrix = new int[n, m];
+            matrix = new int[n, m];
             for (int i = 0; i < n; i++)
             {
                 string[] buffer = load.ReadLine().Split(' ');
@@ -22,7 +22,7 @@ namespace Curs_26_05_Bk
                     matrix[i, j] = int.Parse(buffer[j]);
                 }
             }
-            //ViewMatrix(matrix);
+            ViewMatrix(matrix);
             //Queue A = new Queue();
             //A.Push(new TriData(1, 2, 1));
             //A.Push(new TriData(3, 4, 5));
@@ -30,7 +30,7 @@ namespace Curs_26_05_Bk
             //A.Push(new TriData(0, 2, 4));
             //A.Push(new TriData(7, 2, 3));
             //Console.WriteLine(A.view());
-            //Lee();
+            Lee();
 
             //BK test---------
             //int n = 5;
@@ -81,8 +81,9 @@ namespace Curs_26_05_Bk
                         matrix[t.l, t.c - 1] = t.v + 1;
                     }
                 }
-                Console.WriteLine(A.view());
+                //Console.WriteLine(A.view());
                 ViewMatrix(matrix);
+                Console.WriteLine();
             }
         }
         private static int[,] ReadMatrixFile()
