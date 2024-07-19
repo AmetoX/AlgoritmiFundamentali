@@ -10,19 +10,19 @@ namespace Curs_26_05_Bk
         static void Main(string[] args)
         {
             //Algoritmul lui Lee--------
-            TextReader load = new StreamReader(@"E:\Coding\Sem 2\AlgoritmiFundamentali\Curs_26_05_Bk\TextFile1.txt");
-            int n = int.Parse(load.ReadLine());
-            int m = int.Parse(load.ReadLine());
-            matrix = new int[n, m];
-            for (int i = 0; i < n; i++)
-            {
-                string[] buffer = load.ReadLine().Split(' ');
-                for (int j = 0; j < m; j++)
-                {
-                    matrix[i, j] = int.Parse(buffer[j]);
-                }
-            }
-            ViewMatrix(matrix);
+            //TextReader load = new StreamReader(@"E:\Coding\Sem 2\AlgoritmiFundamentali\Curs_26_05_Bk\TextFile1.txt");
+            //int n = int.Parse(load.ReadLine());
+            //int m = int.Parse(load.ReadLine());
+            //matrix = new int[n, m];
+            //for (int i = 0; i < n; i++)
+            //{
+            //    string[] buffer = load.ReadLine().Split(' ');
+            //    for (int j = 0; j < m; j++)
+            //    {
+            //        matrix[i, j] = int.Parse(buffer[j]);
+            //    }
+            //}
+            //ViewMatrix(matrix);
             //Queue A = new Queue();
             //A.Push(new TriData(1, 2, 1));
             //A.Push(new TriData(3, 4, 5));
@@ -30,15 +30,15 @@ namespace Curs_26_05_Bk
             //A.Push(new TriData(0, 2, 4));
             //A.Push(new TriData(7, 2, 3));
             //Console.WriteLine(A.view());
-            Lee();
+            //Lee();
 
             //BK test---------
-            //int n = 5;
-            //int[] s = new int[n];
-            //bool[] b = new bool[n];
-            //BK1(0, n, s);
-            //BK2(0, n, s);
-            //BK3(0, n, s, b);
+            int n = 5;
+            int[] s = new int[n];
+            bool[] b = new bool[n];
+            BK1(0, n, s);
+            BK2(0, n, s);
+            BK3(0, n, s, b);
             Console.WriteLine("Done");
         }
         public static void Lee()
